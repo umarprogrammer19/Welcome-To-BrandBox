@@ -194,6 +194,10 @@ body {
 }
 
 @media screen and (max-width: 480px) {
+    .content {
+        margin-top: -10px;
+    }
+
     .container {
         padding: 10px;
     }
