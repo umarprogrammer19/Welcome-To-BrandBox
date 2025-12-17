@@ -18,7 +18,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     max-width: 1440px;
-    margin: 40px auto;
+    margin: 0 auto;
     padding: 0 40px;
     justify-content: center;
     position: relative;
@@ -67,7 +67,7 @@ body {
 }
 
 .message p {
-    font-size: 1rem;
+    font-size: 0.95rem;
     font-family: 'Poppins', sans-serif;
     color: #444;
     line-height: 1.6;
@@ -160,6 +160,7 @@ body {
     .container {
         flex-direction: column;
         padding: 20px;
+        margin-top: 40px;
     }
 
     .content {
@@ -197,14 +198,14 @@ body {
     }
 
     .message {
-        margin-top: -2%;
+        margin-top: 5%;
     }
 
     .message p {
         max-width: 100%;
         line-height: 10px;
         position: relative;
-        top: 3px;
+        top: 5px;
     }
 
     .footer-message {
