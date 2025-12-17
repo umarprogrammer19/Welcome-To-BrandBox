@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Claude UI</title>
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+            color: #333;
+        }
+
+        p {
+            font-size: 14px;
+        }
+
+        .white-box {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            max-width: 700px;
+            width: 90%;
+            text-align: center;
+        }
+
+        .orange-box {
+            background-color: #ffffff;
+            /* Claude logo orange */
+            padding: 30px;
+            border-radius: 8px;
+            color: #000;
+            /* White text for contrast */
+            margin-bottom: 20px;
+        }
+
+        .orange-box p {
+            color: #000;
+            line-height: 1.4;
+        }
+
+        .orange-box h3 {
+            color: #000;
+        }
+
+        /* Button styling */
+        .gift-button {
+            display: inline-block;
+            background-color: #ff7700;
+            /* A darker blue for the button */
+            color: #ffffff;
+            padding: 12px 25px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            cursor: pointer;
+            border: none;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+        .gift-button:hover {
+            background-color: #9ccdb2;
+        }
+
+        /* Pop-up styling */
+        .popup-overlay {
+            display: none;
+            /* Hidden by default */
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        .popup-content {
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            max-width: 500px;
+            width: 90%;
+            position: relative;
+        }
+
+        .popup-content img {
+            max-width: 100%;
+            height: auto;
+            margin-top: 20px;
+        }
+
+        .close-button {
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            font-size: 24px;
+            cursor: pointer;
+            color: #333;
+            border: none;
+            background: rgb(228, 230, 240);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="white-box">
+        <div class="orange-box" style="border: 2px solid #ff7700;">
+            <h3 style="color: #ff7700; font-weight: bolder;">Cheers to New Chapters 🎉</h3>
+            <p>This season, we’re not just celebrating the holidays we’re embracing what’s next.</p>
+            <p>We’ve got a little surprise to share with you.</p>
+            <a class="gift-button" href="https://brandboxglobal.netlify.app/" target="_blank">
+                Click to discover it
+            </a>
+            <p>Thank you for your continued partnership. Here's to a bright and bold New Year!</p>
+        </div>
+    </div>
+
+    <!-- Pop-up Overlay -->
+    <div id="popupOverlay" class="popup-overlay">
+        <div class="popup-content">
+            <button class="close-button"
+                onclick="document.getElementById('popupOverlay').style.display='none'">&times;</button>
+            <img src="https://res.cloudinary.com/dmvs9zlbt/image/upload/v1765885158/k4bmmkjjfr9xftrje20z.gif"
+                alt="Animation Image">
+        </div>
+    </div>
+</body>
+
+</html>
