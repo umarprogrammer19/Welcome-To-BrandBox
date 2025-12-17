@@ -118,11 +118,12 @@ body {
 
 @media screen and (max-width: 1024px) {
     .content {
-        width: 60%;
+        width: 50%;
+        margin-top: 80px;
     }
 
     .card {
-        width: 80%;
+        width: 50%;
         margin-top: 20px;
     }
 
@@ -139,11 +140,13 @@ body {
     }
 
     .message p {
-        max-width: 60%;
+        font-size: 14px;
+        max-width: 100%;
     }
 
     .footer-message {
-        max-width: 60%;
+        font-size: 14px;
+        max-width: 100%;
     }
 }
 
@@ -155,19 +158,20 @@ body {
 
     .content {
         width: 100%;
+        margin-top: -30px;
         padding-right: 0;
-        text-align: center;
+        /* text-align: center; */
     }
 
     .cheers {
-        margin-bottom: 1px;
+        margin-bottom: 0px;
         margin-top: 10px;
         margin-left: 0;
         font-size: 1.5rem;
     }
 
     .new {
-        font-size: 5rem;
+        font-size: 6rem;
         margin: 0;
     }
 
@@ -201,25 +205,32 @@ body {
     .cheers {
         font-size: 1.2rem;
         margin-left: 0;
+        text-align: center;
     }
 
     .new {
-        font-size: 4rem;
+        font-size: 6rem;
+        margin-top: -5%;
     }
 
     .chapters {
-        font-size: 2.5rem;
+        font-size: 5rem;
+        text-align: right;
+        font-weight: 500;
     }
 
     .message p {
-        font-size: 0.9rem;
+        font-size: 0.8rem;
     }
 
     .footer-message {
-        font-size: 0.9rem;
+        margin-top: -2.5%;
+        font-size: 0.8rem;
     }
 
     .card {
+        position: relative;
+        bottom: 10px;
         width: 100%;
     }
 }
